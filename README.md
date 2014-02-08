@@ -9,5 +9,5 @@ My experiments, samples and various attempts with dart polymer.
 Sample using model from external library - the problem when compiled to JS is reported here: 
 http://stackoverflow.com/questions/20750107/model-class-imported-from-packaged-library 
 
-<b>[External model](web/indexeddb)</b>
+<b>[IndexedDB & Indexes](web/indexeddb)</b>
 Sample using indexeddb - the problem when compiled to JS in release mode => when experimenting with indexes, found a problem with bound function(s).
