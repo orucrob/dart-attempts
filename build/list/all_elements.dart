@@ -4,10 +4,10 @@ import 'package:polymer/polymer.dart';
 import 'package:dart_attempts_lib/dartattemptslib.dart';
 //import '../../lib/dartattemptslib.dart';
 
-class ListItem extends Object with Observable{
-  @observable bool selected;
-  @observable MyModel item;
-  ListItem(this.item, [this.selected = false]);
+class ListItem extends Object with ChangeNotifier{
+  @reflectable @observable bool get selected => __$selected; bool __$selected; @reflectable set selected(bool value) { __$selected = notifyPropertyChange(#selected, __$selected, value); }
+  @reflectable @observable MyModel get item => __$item; MyModel __$item; @reflectable set item(MyModel value) { __$item = notifyPropertyChange(#item, __$item, value); }
+  ListItem(item, [selected = false]) : __$item = item, __$selected = selected;
 
   String toString(){
     return {
