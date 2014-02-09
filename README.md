@@ -10,4 +10,4 @@ Sample using model from external library - the problem when compiled to JS is re
 http://stackoverflow.com/questions/20750107/model-class-imported-from-packaged-library 
 
 <b>[IndexedDB & Indexes](web/indexeddb)</b>
-Sample using indexeddb - the problem when compiled to JS in release mode => when experimenting with indexes, found a problem with bound function(s).
+Sample using indexeddb
