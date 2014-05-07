@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><script src="packages/shadow_dom/shadow_dom.debug.js"></script>
+<script src="packages/custom_element/custom-elements.debug.js"></script>
+<script src="packages/browser/interop.js"></script>
+
+    <meta charset="utf-8">
+    <title>Test app</title>
+    
+    <script src="screencapture.html_bootstrap.dart.js"></script>
+    
+  </head>
+  <body><polymer-element name="my-idblist">
+  <template>
+    <style>
+      video {
+        width: 307px;
+        height: 250px;
+        background: rgba(255,255,255,0.5);
+        border: 1px solid #ccc;
+      }
+      .grayscale {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+      }
+      .sepia {
+        filter: sepia(1);
+        -webkit-filter: sepia(1);
+      }
+      .blur {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+      }
+    </style>
+    <button id="btn1" on-click="{{start}}">Start</button>
+    <video id="vid" on-click="{{changeFilter}}"></video>
+    <div class="list {{cls}}  mode-{{selectmode}}">
+     <template repeat="{{li in items}}">
+      aa{{li}} ----- {{li.item}} <br>
+       </template>
+
+     </div>
+  </template>
+</polymer-element>
+
+
+
+
+
+
+    <my-idblist></my-idblist>
+  
+</body></html>

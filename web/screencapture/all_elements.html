@@ -1,0 +1,37 @@
+<polymer-element name="my-idblist">
+  <template>
+    <style>
+      video {
+        width: 307px;
+        height: 250px;
+        background: rgba(255,255,255,0.5);
+        border: 1px solid #ccc;
+      }
+      .grayscale {
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+      }
+      .sepia {
+        filter: sepia(1);
+        -webkit-filter: sepia(1);
+      }
+      .blur {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+      }
+    </style>
+    <button id="btn1" on-click="{{start}}">Start</button>
+    <video id="vid" on-click="{{changeFilter}}"></video>
+    <div class="list {{cls}}  mode-{{selectmode}}">
+     <template repeat="{{li in items}}">
+      aa{{li}} ----- {{li.item}} <br/>
+       </template>
+
+     </div>
+  </template>
+</polymer-element>
+
+<script type="application/dart" src="all_elements.dart"></script>
+
+
+

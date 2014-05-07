@@ -1,4 +1,4 @@
-library testlist;
+library testindexdb;
 
 import 'package:polymer/polymer.dart';
 import 'dart:indexed_db' as idb;
